@@ -1,0 +1,37 @@
+.checkbox {
+  border: 1px solid gray;
+  width: 18px;
+  height: 18px;
+  border-radius: 3px;
+}
+
+.checkbox-selected {
+  border: 1px solid rgb(34, 167, 34);
+  background-color: greenyellow;
+  width: 18px;
+  height: 18px;
+  border-radius: 3px;
+}
+
+.checkbox-wrapper {
+  background-color: gainsboro;
+  border-radius: 5px;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.checkbox-wrapper:active,
+.checkbox-wrapper-selected:active {
+  transform: scale(0.9);
+  transition: 0.2s;
+}
+
+.checkbox-wrapper-selected {
+  background-color: green;
+  border-radius: 5px;
+  color: white;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
