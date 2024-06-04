@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useState } from 'react';
 import './Checklist.css';
 import { useAtom } from 'jotai';
 import { selectedItemsCheckAtom } from '../store';
@@ -11,7 +11,7 @@ interface ChecklistProps {
 
 export const ChecklistItem = ({ text, day }: ChecklistProps) => {
   const [isSelected, setIsSelected] = useState(false);
-  const [itemsCheck, setItemsCheck] = useAtom(selectedItemsCheckAtom);
+  const [, setItemsCheck] = useAtom(selectedItemsCheckAtom);
 
   const select = () => {
     setIsSelected(!isSelected);

@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import { AccordionDays } from './components/AccordionDays';
 import { selectedItemsCheckAtom } from './store';
 import { useAtomValue } from 'jotai';
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 
 function App() {
   const daysToCheck = useAtomValue(selectedItemsCheckAtom);

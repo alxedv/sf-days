@@ -1,4 +1,4 @@
-import React, { useEffect, useState, forwardRef, Ref } from 'react';
+import { useEffect, useState, forwardRef } from 'react';
 import { Accordion, AccordionBody, AccordionHeader, AccordionItem } from 'react-bootstrap';
 import { ChecklistItem } from './ChecklistItem';
 import { useAtomValue } from 'jotai';
